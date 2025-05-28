@@ -2,14 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  background-color: #404040;
 }
 
 body {
-  margin: 20px;
+  margin: 0 auto 0;
+  height: 100vh;
   padding: 20px;
-  background-color: rgb(233, 233, 233);
+  background-color: #d2d4e9;
   color: rgb(20, 22, 28);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 1000px;
+   box-shadow: 0 0px 150px #77b2fbe8;
+
 }
 
 h1 {
@@ -18,19 +28,16 @@ h1 {
 }
 
 nav {
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
   margin-bottom: 30px;
-  padding: 0 30px;
+  padding: 0 0 0 30px;
 }
 
 .nav-list {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 30px;
   margin: 0;
+  gap: 10px;
   padding: 20px 0;
   list-style: none;
   background: none;
@@ -41,17 +48,22 @@ nav {
 }
 
 .nav-list a {
-  color: rgb(20, 22, 28);
+  color: #888;
   text-decoration: none;
   padding: 8px 18px;
   border-radius: 6px;
-  transition: background 0.2s, color 0.2s;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.632);
+  transition: box-shadow 0.2s, color 0.2s;
 }
 
 .nav-list a:hover,
 .nav-list a.active {
-  background: #e0e0e0;
   color: #1a73e8;
+    background: #fff;
+
+  box-shadow: 0 0px 30px #1a73e8e8;
+
 }
 
 section {
@@ -62,6 +74,10 @@ section {
   margin-bottom: 30px;
 }
 
+li {
+  list-style: none;
+}
+
 h1,
 h2,
 h3 {
@@ -69,7 +85,6 @@ h3 {
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 10px;
-
 }
 
 button,
@@ -90,18 +105,15 @@ button:hover,
 }
 
 footer {
-  margin-top: 40px;
-  padding: 18px 0;
+  margin: 40px auto 0;
+  padding: 18px;
+  width: fit-content;
   text-align: center;
   color: #888;
-  background: #fff;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-}
-
-li {
-    margin-bottom: 10px;
-    margin-left: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  
 }
 
 @media (max-width: 700px) {
@@ -109,8 +121,8 @@ li {
     padding: 18px 8px;
   }
   .nav-list {
-    gap: 10px;
     font-size: 16px;
+    justify-content: center;
   }
   h1 {
     font-size: 32px;
